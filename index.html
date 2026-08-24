@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sheikh Haider Abbas | Web Developer</title>
-  <meta name="description" content="Portfolio of Sheikh Haider Abbas – Web Developer, Educator, and Digital Solutions Expert based in Pakistan." />
+  <title>Sheikh Haider Abbas | Web Developer & WordPress Expert</title>
+  <meta name="description" content="Portfolio of Sheikh Haider Abbas – Web Developer, WordPress Expert & ICT Educator based in Sargodha, Pakistan." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -40,79 +40,92 @@
         <span class="logo-dot"></span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
         <li><a href="#portfolio" class="nav-link">Projects</a></li>
-        <li><a href="#resume" class="nav-link">Resume</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#clients"   class="nav-link">Clients</a></li>
+        <li><a href="#resume"    class="nav-link">Resume</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <!-- ========== HERO SECTION ========== -->
   <section id="home" class="hero">
-    <!-- Particle canvas -->
     <canvas id="particleCanvas"></canvas>
-
-    <!-- Animated gradient blobs -->
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
 
     <div class="hero-container">
+
       <!-- Profile Image -->
       <div class="hero-image reveal-left">
         <div class="image-wrapper">
-          <!-- REPLACE WITH MY PICTURE -->
           <img src="Sheikh Haider Abbas.jpeg" alt="Sheikh Haider Abbas" class="profile-img" />
           <div class="image-ring ring-1"></div>
           <div class="image-ring ring-2"></div>
           <div class="image-ring ring-3"></div>
           <div class="status-badge">
-            <span class="status-dot"></span>
-            Available for Work
+            <span class="status-dot"></span>Available for Work
           </div>
         </div>
       </div>
 
-      <!-- Hero Content -->
+      <!-- Hero Text -->
       <div class="hero-content reveal-right">
-        <p class="hero-greeting">
-          <span class="wave">👋</span> Hello, I'm
-        </p>
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span>Web Developer &amp; WordPress Expert</span>
+        </div>
+        <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
         <h1 class="hero-name">
           <span class="name-line">Sheikh Haider</span>
           <span class="name-line accent">Abbas</span>
         </h1>
         <div class="hero-role">
-          <span class="role-prefix">I'm a </span>
+          <span class="role-prefix">I build </span>
           <span class="typed-text" id="typedText"></span>
           <span class="cursor-blink">|</span>
         </div>
-        <!-- REPLACE TAGLINE TEXT BELOW WITH YOUR OWN -->
         <p class="hero-bio">
-          Crafting pixel-perfect websites & digital experiences that leave a lasting impression.
-          From concept to deployment — I build solutions that work.
+          BS Computer Science graduate with <strong>real client projects live on the web</strong>.
+          From AI-powered apps to WordPress business sites — I craft digital solutions that actually deliver results.
         </p>
+
+        <!-- Mini stats in hero -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hstat-num">10+</span>
+            <span class="hstat-label">Projects</span>
+          </div>
+          <div class="hstat-divider"></div>
+          <div class="hero-stat">
+            <span class="hstat-num">7+</span>
+            <span class="hstat-label">Clients</span>
+          </div>
+          <div class="hstat-divider"></div>
+          <div class="hero-stat">
+            <span class="hstat-num">3+</span>
+            <span class="hstat-label">Yrs Exp</span>
+          </div>
+        </div>
 
         <div class="hero-actions">
           <a href="#portfolio" class="btn btn-primary">
             <span>View My Work</span>
             <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="#contact" class="btn btn-outline">
-            <span>Hire Me</span>
-            <i class="fas fa-paper-plane"></i>
+          <a href="Sheikh Haider Abbas.pdf" class="btn btn-outline" download="Sheikh_Haider_Abbas_CV.pdf">
+            <i class="fas fa-download"></i>
+            <span>Download CV</span>
           </a>
         </div>
 
-        <!-- Social Icons -->
         <div class="social-links">
           <a href="https://linkedin.com/in/sheikh-haider0789" target="_blank" class="social-icon" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
@@ -133,11 +146,8 @@
       </div>
     </div>
 
-    <!-- Scroll Indicator -->
     <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-      <div class="scroll-mouse">
-        <div class="scroll-wheel"></div>
-      </div>
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
       <span>Scroll Down</span>
     </a>
   </section>
@@ -152,108 +162,77 @@
       </div>
 
       <div class="about-grid">
-        <!-- About Text -->
         <div class="about-text reveal-left">
-          <!-- REPLACE ABOUT PARAGRAPH WITH YOUR OWN -->
           <p>
-            I'm <strong>Sheikh Haider Abbas</strong>, a passionate Computer Science graduate and web developer
-            based in Sargodha, Pakistan. With hands-on experience in WordPress development, web project management,
-            teaching, and digital business operations, I bring a versatile skill set to every project I take on.
+            I'm <strong>Sheikh Haider Abbas</strong>, a passionate Computer Science graduate and full-stack web developer
+            based in Sargodha, Pakistan. I specialize in WordPress development, custom web applications, and AI-powered
+            digital solutions that serve real businesses.
           </p>
           <p>
-            I've had the privilege of working with real clients — building websites for software houses, medical clinics,
-            educational institutions, and sports businesses. I love transforming ideas into clean, functional, and
-            visually compelling digital experiences.
+            I've built and launched live websites for software houses, medical clinics, educational institutions, and
+            sports businesses — every project delivered with clean code, responsive design, and a focus on real results
+            for the client.
           </p>
           <p>
-            When I'm not coding, I'm teaching ICT at university level or exploring the latest trends in AI-powered
-            web development. I believe the best websites don't just look good — they solve real problems.
+            Alongside development, I teach ICT at university level and have guided hundreds of students in digital skills.
+            I believe technology should solve problems — and great websites prove that.
           </p>
 
           <div class="about-stats">
             <div class="stat-item">
-              <span class="stat-number" data-count="5">0</span>
-              <span class="stat-label">Projects Done</span>
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="7">0</span>
+              <span class="stat-label">Clients</span>
             </div>
             <div class="stat-item">
               <span class="stat-number" data-count="3">0</span>
-              <span class="stat-label">Years Experience</span>
+              <span class="stat-label">Yrs Exp</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number" data-count="4">0</span>
-              <span class="stat-label">Happy Clients</span>
+              <span class="stat-number" data-count="200">0</span>
+              <span class="stat-label">Students</span>
             </div>
           </div>
 
-          <!-- REPLACE WITH CV LINK -->
-          <a href="#" class="btn btn-primary cv-btn" download>
+          <a href="Sheikh Haider Abbas.pdf" class="btn btn-primary cv-btn" download="Sheikh_Haider_Abbas_CV.pdf">
             <i class="fas fa-download"></i>
             <span>Download CV</span>
           </a>
         </div>
 
-        <!-- Skills -->
         <div class="about-skills reveal-right">
           <h3 class="skills-title">Technical Skills</h3>
           <div class="skill-bars">
             <div class="skill-item">
-              <div class="skill-info">
-                <span>WordPress</span>
-                <span>90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="90"></div>
-              </div>
+              <div class="skill-info"><span>WordPress</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>HTML &amp; CSS</span>
-                <span>85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="85"></div>
-              </div>
+              <div class="skill-info"><span>HTML &amp; CSS</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>JavaScript</span>
-                <span>70%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="70"></div>
-              </div>
+              <div class="skill-info"><span>JavaScript</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>PHP &amp; MySQL</span>
-                <span>75%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="75"></div>
-              </div>
+              <div class="skill-info"><span>PHP &amp; MySQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>React (Basic)</span>
-                <span>55%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="55"></div>
-              </div>
+              <div class="skill-info"><span>React (Basic)</span><span>55%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
             </div>
             <div class="skill-item">
-              <div class="skill-info">
-                <span>AI / Chatbot Integration</span>
-                <span>65%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-fill" data-width="65"></div>
-              </div>
+              <div class="skill-info"><span>AI &amp; Chatbot Integration</span><span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
             </div>
           </div>
 
-          <!-- Soft Skills Tags -->
-          <h3 class="skills-title" style="margin-top: 2rem;">Soft Skills</h3>
+          <h3 class="skills-title" style="margin-top:2rem;">Soft Skills</h3>
           <div class="soft-skills">
             <span class="skill-tag"><i class="fas fa-brain"></i> Problem Solving</span>
             <span class="skill-tag"><i class="fas fa-comments"></i> Communication</span>
@@ -275,75 +254,43 @@
         <h2 class="section-title">My <span class="accent">Services</span></h2>
         <div class="title-underline"></div>
       </div>
-
       <div class="services-grid">
-
-        <div class="service-card reveal-up" style="--delay: 0.1s">
-          <div class="card-front">
-            <div class="service-icon">
-              <i class="fas fa-palette"></i>
-            </div>
-            <h3>Web Design</h3>
-            <p>Creating visually stunning, modern designs that captivate audiences and reflect your brand identity perfectly.</p>
-          </div>
+        <div class="service-card reveal-up" style="--delay:0.1s">
+          <div class="service-icon"><i class="fas fa-palette"></i></div>
+          <h3>Web Design</h3>
+          <p>Visually stunning, modern designs that captivate audiences and reflect your brand identity perfectly.</p>
           <div class="card-glow"></div>
         </div>
-
-        <div class="service-card reveal-up" style="--delay: 0.2s">
-          <div class="card-front">
-            <div class="service-icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Web Development</h3>
-            <p>Building robust, scalable web applications using WordPress, PHP, MySQL, and modern front-end technologies.</p>
-          </div>
+        <div class="service-card reveal-up" style="--delay:0.2s">
+          <div class="service-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Robust, scalable web applications using WordPress, PHP, MySQL, and modern front-end technologies.</p>
           <div class="card-glow"></div>
         </div>
-
-        <div class="service-card reveal-up" style="--delay: 0.3s">
-          <div class="card-front">
-            <div class="service-icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3>Responsive Design</h3>
-            <p>Ensuring flawless performance across all screen sizes — from mobile phones to large desktop monitors.</p>
-          </div>
+        <div class="service-card reveal-up" style="--delay:0.3s">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Flawless performance across all screen sizes — from mobile phones to large desktop monitors.</p>
           <div class="card-glow"></div>
         </div>
-
-        <div class="service-card reveal-up" style="--delay: 0.4s">
-          <div class="card-front">
-            <div class="service-icon">
-              <i class="fas fa-robot"></i>
-            </div>
-            <h3>AI Integration</h3>
-            <p>Integrating intelligent chatbots, image recognition, and AI-powered features into web applications.</p>
-          </div>
+        <div class="service-card reveal-up" style="--delay:0.4s">
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Integration</h3>
+          <p>Intelligent chatbots, image recognition, and AI-powered features built into web applications.</p>
           <div class="card-glow"></div>
         </div>
-
-        <div class="service-card reveal-up" style="--delay: 0.5s">
-          <div class="card-front">
-            <div class="service-icon">
-              <i class="fab fa-wordpress"></i>
-            </div>
-            <h3>WordPress Expert</h3>
-            <p>Custom theme development, plugin configuration, performance optimization, and full WordPress site management.</p>
-          </div>
+        <div class="service-card reveal-up" style="--delay:0.5s">
+          <div class="service-icon"><i class="fab fa-wordpress"></i></div>
+          <h3>WordPress Expert</h3>
+          <p>Custom theme development, plugin setup, speed optimization, and full WordPress site management.</p>
           <div class="card-glow"></div>
         </div>
-
-        <div class="service-card reveal-up" style="--delay: 0.6s">
-          <div class="card-front">
-            <div class="service-icon">
-              <i class="fas fa-chalkboard-teacher"></i>
-            </div>
-            <h3>Tech Education</h3>
-            <p>Delivering ICT courses, computer science training, and digital skills workshops for students and professionals.</p>
-          </div>
+        <div class="service-card reveal-up" style="--delay:0.6s">
+          <div class="service-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Tech Education</h3>
+          <p>ICT courses, computer science training, and digital skills workshops for students and professionals.</p>
           <div class="card-glow"></div>
         </div>
-
       </div>
     </div>
   </section>
@@ -355,10 +302,9 @@
         <span class="section-tag">My Work</span>
         <h2 class="section-title">Live <span class="accent">Projects</span></h2>
         <div class="title-underline"></div>
-        <p class="section-desc">Real client projects — live and in production.</p>
+        <p class="section-desc">Real client projects — live, deployed, and delivering results.</p>
       </div>
 
-      <!-- Filter Buttons -->
       <div class="filter-buttons reveal-up">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="business">Business</button>
@@ -367,11 +313,10 @@
         <button class="filter-btn" data-filter="sports">Sports</button>
       </div>
 
-      <!-- Project Grid -->
       <div class="projects-grid" id="projectsGrid">
 
-        <!-- Project 1: Progressive IT Tech -->
-        <div class="project-card reveal-up" data-category="business" style="--delay: 0.1s">
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" data-category="business" style="--delay:0.1s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Progressive IT Tech -->
             <div class="thumbnail-placeholder">
@@ -383,7 +328,7 @@
                 <h3>Progressive IT Tech</h3>
                 <p>IT Company Website</p>
                 <a href="https://progressiveittech.com/" target="_blank" rel="noopener" class="btn-live">
-                  <i class="fas fa-external-link-alt"></i> View Live Project
+                  <i class="fas fa-external-link-alt"></i> View Live
                 </a>
               </div>
             </div>
@@ -391,15 +336,15 @@
           <div class="project-info">
             <span class="project-category business">Business</span>
             <h3 class="project-title">Progressive IT Tech</h3>
-            <p class="project-desc">Professional software house website showcasing IT services and digital solutions.</p>
+            <p class="project-desc">Professional software house website showcasing IT services, team, and digital solutions.</p>
             <a href="https://progressiveittech.com/" target="_blank" rel="noopener" class="project-link">
               Visit Site <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <!-- Project 2: Asif Kamran Fertility IVF -->
-        <div class="project-card reveal-up" data-category="healthcare" style="--delay: 0.2s">
+        <!-- Project 2 -->
+        <div class="project-card reveal-up" data-category="healthcare" style="--delay:0.2s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Asif Kamran Fertility IVF -->
             <div class="thumbnail-placeholder">
@@ -411,7 +356,7 @@
                 <h3>Asif &amp; Kamran Fertility IVF</h3>
                 <p>Medical / Healthcare Website</p>
                 <a href="https://asifakamranfertilityivf.com/" target="_blank" rel="noopener" class="btn-live">
-                  <i class="fas fa-external-link-alt"></i> View Live Project
+                  <i class="fas fa-external-link-alt"></i> View Live
                 </a>
               </div>
             </div>
@@ -419,15 +364,15 @@
           <div class="project-info">
             <span class="project-category healthcare">Healthcare</span>
             <h3 class="project-title">Asif &amp; Kamran Fertility IVF</h3>
-            <p class="project-desc">Patient-friendly medical website for an IVF and fertility clinic with accessible service pages.</p>
+            <p class="project-desc">Patient-friendly IVF clinic website with accessible service pages and responsive design.</p>
             <a href="https://asifakamranfertilityivf.com/" target="_blank" rel="noopener" class="project-link">
               Visit Site <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <!-- Project 3: Superior Phalia -->
-        <div class="project-card reveal-up" data-category="education" style="--delay: 0.3s">
+        <!-- Project 3 -->
+        <div class="project-card reveal-up" data-category="education" style="--delay:0.3s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Superior Phalia -->
             <div class="thumbnail-placeholder">
@@ -439,7 +384,7 @@
                 <h3>Superior College Phalia</h3>
                 <p>Educational Institution Website</p>
                 <a href="https://superiorphalia.edu.pk/" target="_blank" rel="noopener" class="btn-live">
-                  <i class="fas fa-external-link-alt"></i> View Live Project
+                  <i class="fas fa-external-link-alt"></i> View Live
                 </a>
               </div>
             </div>
@@ -447,15 +392,15 @@
           <div class="project-info">
             <span class="project-category education">Education</span>
             <h3 class="project-title">Superior College Phalia</h3>
-            <p class="project-desc">Modern educational platform showcasing academic programs, admissions, and campus life.</p>
+            <p class="project-desc">Modern college platform showcasing academic programs, admissions, faculty, and campus life.</p>
             <a href="https://superiorphalia.edu.pk/" target="_blank" rel="noopener" class="project-link">
               Visit Site <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
 
-        <!-- Project 4: Brain D Sports -->
-        <div class="project-card reveal-up" data-category="sports" style="--delay: 0.4s">
+        <!-- Project 4 -->
+        <div class="project-card reveal-up" data-category="sports" style="--delay:0.4s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Brain D Sports -->
             <div class="thumbnail-placeholder">
@@ -467,7 +412,7 @@
                 <h3>Brain D Sports</h3>
                 <p>Sports / Business Website</p>
                 <a href="https://braindsports.com/" target="_blank" rel="noopener" class="btn-live">
-                  <i class="fas fa-external-link-alt"></i> View Live Project
+                  <i class="fas fa-external-link-alt"></i> View Live
                 </a>
               </div>
             </div>
@@ -475,10 +420,189 @@
           <div class="project-info">
             <span class="project-category sports">Sports</span>
             <h3 class="project-title">Brain D Sports</h3>
-            <p class="project-desc">Dynamic sports business website with engaging design and comprehensive product presentation.</p>
+            <p class="project-desc">Dynamic sports business website with engaging design and comprehensive product catalog.</p>
             <a href="https://braindsports.com/" target="_blank" rel="noopener" class="project-link">
               Visit Site <i class="fas fa-arrow-right"></i>
             </a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal-up" data-category="education" style="--delay:0.5s">
+          <div class="project-thumbnail">
+            <!-- REPLACE WITH SCREENSHOT OF Misali Model High School -->
+            <div class="thumbnail-placeholder">
+              <i class="fas fa-school"></i>
+              <span>Misali Model High School</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h3>Misali Model High School</h3>
+                <p>School Management Website</p>
+                <a href="#" class="btn-live">
+                  <i class="fas fa-external-link-alt"></i> View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category education">Education</span>
+            <h3 class="project-title">Misali Model High School</h3>
+            <p class="project-desc">AI-assisted school management site with admissions, faculty profiles, and announcements.</p>
+            <span class="project-link" style="color:var(--text-muted);cursor:default;">
+              AI-Assisted Build <i class="fas fa-robot"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal-up" data-category="business" style="--delay:0.6s">
+          <div class="project-thumbnail">
+            <!-- REPLACE WITH SCREENSHOT OF AgriBazzar -->
+            <div class="thumbnail-placeholder agri">
+              <i class="fas fa-seedling"></i>
+              <span>AgriBazzar — FYP</span>
+            </div>
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h3>AgriBazzar</h3>
+                <p>AI Agriculture Web App</p>
+                <a href="#" class="btn-live">
+                  <i class="fas fa-external-link-alt"></i> View Project
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category business" style="background:rgba(34,197,94,0.12);color:#22c55e;">AgriTech</span>
+            <h3 class="project-title">AgriBazzar — AI Agriculture App</h3>
+            <p class="project-desc">Final Year Project: AI chatbot, crop disease recognition, farmer–buyer marketplace built with React, PHP &amp; MySQL.</p>
+            <span class="project-link" style="color:var(--text-muted);cursor:default;">
+              University FYP <i class="fas fa-university"></i>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS SECTION ========== -->
+  <section id="clients" class="clients section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Trusted By</span>
+        <h2 class="section-title">Happy <span class="accent">Clients</span></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">Businesses and institutions that trusted me with their online presence.</p>
+      </div>
+
+      <!-- Big counter bar -->
+      <div class="clients-counter-row reveal-up">
+        <div class="clients-counter-item">
+          <div class="cc-icon"><i class="fas fa-handshake"></i></div>
+          <span class="cc-number" data-count="7">0</span>
+          <span class="cc-plus">+</span>
+          <span class="cc-label">Satisfied Clients</span>
+        </div>
+        <div class="clients-counter-item">
+          <div class="cc-icon"><i class="fas fa-globe"></i></div>
+          <span class="cc-number" data-count="6">0</span>
+          <span class="cc-plus">+</span>
+          <span class="cc-label">Live Websites</span>
+        </div>
+        <div class="clients-counter-item">
+          <div class="cc-icon"><i class="fas fa-star"></i></div>
+          <span class="cc-number" data-count="100">0</span>
+          <span class="cc-plus">%</span>
+          <span class="cc-label">Satisfaction Rate</span>
+        </div>
+        <div class="clients-counter-item">
+          <div class="cc-icon"><i class="fas fa-users"></i></div>
+          <span class="cc-number" data-count="200">0</span>
+          <span class="cc-plus">+</span>
+          <span class="cc-label">Students Taught</span>
+        </div>
+      </div>
+
+      <!-- Client cards -->
+      <div class="clients-grid">
+
+        <div class="client-card reveal-up" style="--delay:0.1s">
+          <div class="client-icon business-cl"><i class="fas fa-laptop-code"></i></div>
+          <div class="client-info">
+            <h4>Progressive IT Tech</h4>
+            <span class="client-type">Software House</span>
+            <p>"Professional website delivered on time with excellent design and performance."</p>
+          </div>
+          <div class="client-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="client-card reveal-up" style="--delay:0.2s">
+          <div class="client-icon health-cl"><i class="fas fa-heartbeat"></i></div>
+          <div class="client-info">
+            <h4>Asif &amp; Kamran Fertility IVF</h4>
+            <span class="client-type">Medical Clinic</span>
+            <p>"Our patients love the website — easy to navigate and very professional."</p>
+          </div>
+          <div class="client-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="client-card reveal-up" style="--delay:0.3s">
+          <div class="client-icon edu-cl"><i class="fas fa-graduation-cap"></i></div>
+          <div class="client-info">
+            <h4>Superior College Phalia</h4>
+            <span class="client-type">Educational Institution</span>
+            <p>"A beautiful, fast website that perfectly represents our institution online."</p>
+          </div>
+          <div class="client-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="client-card reveal-up" style="--delay:0.4s">
+          <div class="client-icon sport-cl"><i class="fas fa-trophy"></i></div>
+          <div class="client-info">
+            <h4>Brain D Sports</h4>
+            <span class="client-type">Sports Business</span>
+            <p>"Exactly what we needed — clean, responsive, and our customers love it."</p>
+          </div>
+          <div class="client-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <div class="client-card reveal-up" style="--delay:0.5s">
+          <div class="client-icon edu-cl"><i class="fas fa-school"></i></div>
+          <div class="client-info">
+            <h4>Misali Model High School</h4>
+            <span class="client-type">School</span>
+            <p>"Our school's online presence is now fully established. Great work!"</p>
+          </div>
+          <div class="client-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="client-card reveal-up" style="--delay:0.6s">
+          <div class="client-icon univ-cl"><i class="fas fa-university"></i></div>
+          <div class="client-info">
+            <h4>Superior University</h4>
+            <span class="client-type">University — Lab &amp; Teaching</span>
+            <p>"Dedicated, knowledgeable, and a great support to both students and faculty."</p>
+          </div>
+          <div class="client-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
           </div>
         </div>
 
@@ -496,7 +620,8 @@
       </div>
 
       <div class="timeline-grid">
-        <!-- Education -->
+
+        <!-- ── EDUCATION ── -->
         <div class="timeline-col">
           <h3 class="timeline-heading reveal-up">
             <i class="fas fa-graduation-cap"></i> Education
@@ -509,9 +634,36 @@
                 <span class="timeline-date">2021 – 2025</span>
                 <h4>BS in Computer Science</h4>
                 <p class="timeline-place"><i class="fas fa-university"></i> Govt College Faisalabad</p>
-                <p>Final Year Project: <strong>AgriBazzar</strong> — AI-enabled Agriculture Web Application with chatbot, image recognition, and e-commerce capabilities.</p>
+                <p>Final Year Project: <strong>AgriBazzar</strong> — AI-enabled Agriculture Web Application
+                with AI chatbot, crop &amp; disease image recognition, and farmer–buyer marketplace.</p>
                 <div class="timeline-tags">
-                  <span>React</span><span>PHP</span><span>MySQL</span><span>AI</span>
+                  <span>React</span><span>PHP</span><span>MySQL</span><span>AI</span><span>Image Recognition</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2019 – 2021</span>
+                <h4>Intermediate (FSc / ICS)</h4>
+                <p class="timeline-place"><i class="fas fa-school"></i> Govt College, Sargodha</p>
+                <p>Completed Intermediate education with focus on science and computer subjects, building a strong academic foundation for university-level CS studies.</p>
+                <div class="timeline-tags">
+                  <span>Mathematics</span><span>Computer Science</span><span>Physics</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">Up to 2019</span>
+                <h4>Matriculation (SSC)</h4>
+                <p class="timeline-place"><i class="fas fa-school"></i> Misali Model High School, Sargodha</p>
+                <p>Completed secondary school education with distinction. Developed early interest in computers and technology during school years.</p>
+                <div class="timeline-tags">
+                  <span>Science</span><span>Computer Basics</span><span>Mathematics</span>
                 </div>
               </div>
             </div>
@@ -519,7 +671,7 @@
           </div>
         </div>
 
-        <!-- Experience -->
+        <!-- ── EXPERIENCE ── -->
         <div class="timeline-col">
           <h3 class="timeline-heading reveal-up">
             <i class="fas fa-briefcase"></i> Experience
@@ -532,7 +684,7 @@
                 <span class="timeline-date">2025 – Present</span>
                 <h4>Computer Lab Attendant</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Superior University, Mandi Bahauddin</p>
-                <p>Managing computer systems, assisting students during lab sessions, and supporting faculty during practical classes.</p>
+                <p>Managing computer systems, assisting students during lab sessions, maintaining hardware/software, and supporting faculty during practical classes.</p>
               </div>
             </div>
 
@@ -540,7 +692,7 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <span class="timeline-date">2025 – Present</span>
-                <h4>Lecturer – ICT</h4>
+                <h4>Lecturer — ICT</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Superior University, Mandi Bahauddin</p>
                 <p>Delivering undergraduate ICT courses covering computing, networks, and digital systems. Conducting lab sessions and guiding students in academic projects.</p>
               </div>
@@ -552,7 +704,10 @@
                 <span class="timeline-date">2024 – Present</span>
                 <h4>Web Developer (WordPress)</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Progressive IT Tech Software House</p>
-                <p>WordPress development, theme customization, content management, and website performance optimization for real clients.</p>
+                <p>WordPress development, theme customization, content management, and website performance optimization. Delivered multiple live client projects.</p>
+                <div class="timeline-tags">
+                  <span>WordPress</span><span>PHP</span><span>CSS</span><span>Client Work</span>
+                </div>
               </div>
             </div>
 
@@ -562,7 +717,7 @@
                 <span class="timeline-date">2021 – 2022</span>
                 <h4>Freelancing &amp; Course Organizer</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Superior College, Mandi Bahauddin</p>
-                <p>Organized freelancing training sessions, coordinated course schedules, and guided students in digital skills.</p>
+                <p>Organized freelancing training sessions, coordinated course schedules and instructors, guided students in building digital skills.</p>
               </div>
             </div>
 
@@ -572,10 +727,43 @@
                 <span class="timeline-date">2019 – 2022</span>
                 <h4>CS / ICT Teacher</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Misali Model High School</p>
-                <p>Taught Computer Science and ICT to students from classes 5 to 10, covering both theory and practical computer skills.</p>
+                <p>Taught Computer Science and ICT to students from classes 5 to 10, covering both theoretical concepts and practical computer skills.</p>
               </div>
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications / Activities -->
+      <div class="activities-row reveal-up">
+        <h3 class="timeline-heading" style="margin-bottom:1.5rem;">
+          <i class="fas fa-certificate"></i> Academic &amp; Professional Activities
+        </h3>
+        <div class="activities-grid">
+          <div class="activity-card">
+            <div class="act-icon"><i class="fas fa-flask"></i></div>
+            <div>
+              <h5>Research Conference</h5>
+              <span>Superior University — May 2025</span>
+              <p>Attended research conference; gained exposure to emerging tech trends, research methodologies, and academic networking.</p>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="act-icon"><i class="fas fa-robot"></i></div>
+            <div>
+              <h5>AI-Powered Development</h5>
+              <span>Cursor AI — 2024–2025</span>
+              <p>Leveraged AI development tools to accelerate project delivery, generate code, and implement advanced features faster.</p>
+            </div>
+          </div>
+          <div class="activity-card">
+            <div class="act-icon"><i class="fas fa-store"></i></div>
+            <div>
+              <h5>Online Business (Self-Employed)</h5>
+              <span>2 Years Experience</span>
+              <p>Managed online clothing sales, customer handling, order processing, product promotion, and basic digital marketing.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -593,52 +781,40 @@
       </div>
 
       <div class="contact-grid">
-        <!-- Contact Info -->
         <div class="contact-info reveal-left">
           <h3>Let's talk about your project</h3>
           <p>I'm available for freelance work and full-time opportunities. Reach out through any channel below.</p>
-
           <div class="contact-items">
             <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-envelope"></i>
-              </div>
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div class="contact-detail">
                 <span>Email</span>
                 <a href="mailto:shabbas0789@gmail.com">shabbas0789@gmail.com</a>
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-phone"></i>
-              </div>
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
               <div class="contact-detail">
                 <span>Phone</span>
                 <a href="tel:+923411557748">+92341-1557748</a>
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="contact-detail">
-                <span>Location</span>
-                <p>Sargodha, Pakistan</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fab fa-whatsapp"></i>
-              </div>
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
               <div class="contact-detail">
                 <span>WhatsApp</span>
                 <a href="https://wa.me/923411557748" target="_blank" rel="noopener">+92341-1557748</a>
               </div>
             </div>
             <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fab fa-linkedin-in"></i>
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-detail">
+                <span>Location</span>
+                <p>Sargodha, Pakistan</p>
               </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
               <div class="contact-detail">
                 <span>LinkedIn</span>
                 <a href="https://linkedin.com/in/sheikh-haider0789" target="_blank" rel="noopener">sheikh-haider0789</a>
@@ -647,26 +823,25 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
         <div class="contact-form-wrapper reveal-right">
           <form class="contact-form" id="contactForm">
             <div class="form-group">
-              <input type="text" id="nameInput" class="form-input" required autocomplete="off" />
+              <input type="text" id="nameInput" class="form-input" required autocomplete="off" placeholder=" " />
               <label for="nameInput" class="form-label">Your Name</label>
               <div class="input-border"></div>
             </div>
             <div class="form-group">
-              <input type="email" id="emailInput" class="form-input" required autocomplete="off" />
+              <input type="email" id="emailInput" class="form-input" required autocomplete="off" placeholder=" " />
               <label for="emailInput" class="form-label">Your Email</label>
               <div class="input-border"></div>
             </div>
             <div class="form-group">
-              <input type="text" id="subjectInput" class="form-input" required autocomplete="off" />
+              <input type="text" id="subjectInput" class="form-input" required autocomplete="off" placeholder=" " />
               <label for="subjectInput" class="form-label">Subject</label>
               <div class="input-border"></div>
             </div>
             <div class="form-group">
-              <textarea id="messageInput" class="form-input form-textarea" required></textarea>
+              <textarea id="messageInput" class="form-input form-textarea" required placeholder=" "></textarea>
               <label for="messageInput" class="form-label">Your Message</label>
               <div class="input-border"></div>
             </div>
@@ -676,7 +851,7 @@
             </button>
             <div class="form-success" id="formSuccess">
               <i class="fas fa-check-circle"></i>
-              <span>Message sent successfully! I'll get back to you soon.</span>
+              <span>Message sent! I'll get back to you soon.</span>
             </div>
           </form>
         </div>
@@ -694,33 +869,28 @@
           <span class="logo-dot"></span>
           <p>Sheikh Haider Abbas</p>
         </div>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
+        </nav>
         <div class="footer-social">
-          <a href="https://linkedin.com/in/sheikh-haider0789" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/shabbas0789" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://wa.me/923411557748" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-          <a href="#" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="mailto:shabbas0789@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
+          <a href="https://linkedin.com/in/sheikh-haider0789" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/shabbas0789"            target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/923411557748"                target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"                                         target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:shabbas0789@gmail.com"                              aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <p class="footer-copy">© 2026 Sheikh Haider Abbas. All rights reserved.</p>
       </div>
     </div>
-    <!-- Back to Top -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
       <i class="fas fa-chevron-up"></i>
     </button>
   </footer>
 
-  <!-- Main Script -->
   <script src="script.js"></script>
 </body>
 </html>
