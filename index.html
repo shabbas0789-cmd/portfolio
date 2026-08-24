@@ -32,6 +32,40 @@
     </div>
   </div>
 
+  <!-- ========== FLOATING WHATSAPP BUTTON ========== -->
+  <!-- WhatsApp Click-to-Chat API: wa.me/{number}?text={pre-filled message} -->
+  <div class="wa-float-wrapper" id="waFloat">
+    <!-- Tooltip -->
+    <div class="wa-tooltip">
+      <div class="wa-tooltip-avatar">
+        <img src="Sheikh Haider Abbas.jpeg" alt="SHA" />
+      </div>
+      <div class="wa-tooltip-body">
+        <p class="wa-tooltip-name">Sheikh Haider Abbas</p>
+        <p class="wa-tooltip-msg">Hi! 👋 Need a website? Let's chat on WhatsApp.</p>
+        <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20your%20web%20development%20services.%20Can%20we%20discuss%20my%20project%3F"
+           target="_blank" rel="noopener"
+           class="wa-tooltip-btn">
+          <i class="fab fa-whatsapp"></i> Start Chat
+        </a>
+      </div>
+      <button class="wa-tooltip-close" id="waTooltipClose" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Main floating button -->
+    <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20your%20web%20development%20services.%20Can%20we%20discuss%20my%20project%3F"
+       target="_blank" rel="noopener"
+       class="wa-float-btn" id="waFloatBtn"
+       aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp wa-icon-main"></i>
+      <i class="fas fa-times wa-icon-close"></i>
+      <span class="wa-pulse"></span>
+      <span class="wa-badge">1</span>
+    </a>
+  </div>
+
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
@@ -48,6 +82,12 @@
         <li><a href="#resume"    class="nav-link">Resume</a></li>
         <li><a href="#contact"   class="nav-link">Contact</a></li>
       </ul>
+      <!-- Hire Me CTA in navbar -->
+      <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20want%20to%20hire%20you%20for%20a%20project."
+         target="_blank" rel="noopener"
+         class="nav-hire-btn">
+        <i class="fab fa-whatsapp"></i> Hire Me
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
         <span></span><span></span><span></span>
       </button>
@@ -105,7 +145,7 @@
           </div>
           <div class="hstat-divider"></div>
           <div class="hero-stat">
-            <span class="hstat-num">7+</span>
+            <span class="hstat-num">100+</span>
             <span class="hstat-label">Clients</span>
           </div>
           <div class="hstat-divider"></div>
@@ -120,9 +160,12 @@
             <span>View My Work</span>
             <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="Sheikh Haider Abbas.pdf" class="btn btn-outline" download="Sheikh_Haider_Abbas_CV.pdf">
-            <i class="fas fa-download"></i>
-            <span>Download CV</span>
+          <!-- WhatsApp API direct chat button -->
+          <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20visited%20your%20portfolio%20and%20I%27m%20interested%20in%20your%20web%20development%20services."
+             target="_blank" rel="noopener"
+             class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp Me</span>
           </a>
         </div>
 
@@ -133,7 +176,7 @@
           <a href="https://github.com/shabbas0789" target="_blank" class="social-icon" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://wa.me/923411557748" target="_blank" class="social-icon whatsapp-icon" aria-label="WhatsApp">
+          <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20visited%20your%20portfolio." target="_blank" class="social-icon whatsapp-icon" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
           </a>
           <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
@@ -151,6 +194,33 @@
       <span>Scroll Down</span>
     </a>
   </section>
+
+  <!-- ========== MARQUEE STRIP (between hero & about) ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item"><i class="fab fa-wordpress"></i> WordPress Expert</div>
+      <div class="marquee-item"><i class="fas fa-code"></i> Web Development</div>
+      <div class="marquee-item"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+      <div class="marquee-item"><i class="fas fa-robot"></i> AI Integration</div>
+      <div class="marquee-item"><i class="fas fa-palette"></i> UI/UX Design</div>
+      <div class="marquee-item"><i class="fas fa-graduation-cap"></i> ICT Educator</div>
+      <div class="marquee-item"><i class="fas fa-database"></i> PHP &amp; MySQL</div>
+      <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="marquee-item"><i class="fas fa-star"></i> 100+ Clients</div>
+      <div class="marquee-item"><i class="fas fa-globe"></i> Live Projects</div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><i class="fab fa-wordpress"></i> WordPress Expert</div>
+      <div class="marquee-item"><i class="fas fa-code"></i> Web Development</div>
+      <div class="marquee-item"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+      <div class="marquee-item"><i class="fas fa-robot"></i> AI Integration</div>
+      <div class="marquee-item"><i class="fas fa-palette"></i> UI/UX Design</div>
+      <div class="marquee-item"><i class="fas fa-graduation-cap"></i> ICT Educator</div>
+      <div class="marquee-item"><i class="fas fa-database"></i> PHP &amp; MySQL</div>
+      <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="marquee-item"><i class="fas fa-star"></i> 100+ Clients</div>
+      <div class="marquee-item"><i class="fas fa-globe"></i> Live Projects</div>
+    </div>
+  </div>
 
   <!-- ========== ABOUT SECTION ========== -->
   <section id="about" class="about section">
@@ -184,7 +254,7 @@
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number" data-count="7">0</span>
+              <span class="stat-number" data-count="100">0</span>
               <span class="stat-label">Clients</span>
             </div>
             <div class="stat-item">
@@ -197,10 +267,18 @@
             </div>
           </div>
 
-          <a href="Sheikh Haider Abbas.pdf" class="btn btn-primary cv-btn" download="Sheikh_Haider_Abbas_CV.pdf">
-            <i class="fas fa-download"></i>
-            <span>Download CV</span>
-          </a>
+          <div class="about-cta-row">
+            <a href="Sheikh Haider Abbas.pdf" class="btn btn-primary cv-btn" download="Sheikh_Haider_Abbas_CV.pdf">
+              <i class="fas fa-download"></i>
+              <span>Download CV</span>
+            </a>
+            <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20want%20to%20discuss%20a%20project%20with%20you."
+               target="_blank" rel="noopener"
+               class="btn btn-whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>Hire on WhatsApp</span>
+            </a>
+          </div>
         </div>
 
         <div class="about-skills reveal-right">
@@ -315,7 +393,6 @@
 
       <div class="projects-grid" id="projectsGrid">
 
-        <!-- Project 1 -->
         <div class="project-card reveal-up" data-category="business" style="--delay:0.1s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Progressive IT Tech -->
@@ -343,7 +420,6 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
         <div class="project-card reveal-up" data-category="healthcare" style="--delay:0.2s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Asif Kamran Fertility IVF -->
@@ -371,7 +447,6 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
         <div class="project-card reveal-up" data-category="education" style="--delay:0.3s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Superior Phalia -->
@@ -399,7 +474,6 @@
           </div>
         </div>
 
-        <!-- Project 4 -->
         <div class="project-card reveal-up" data-category="sports" style="--delay:0.4s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Brain D Sports -->
@@ -427,7 +501,6 @@
           </div>
         </div>
 
-        <!-- Project 5 -->
         <div class="project-card reveal-up" data-category="education" style="--delay:0.5s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF Misali Model High School -->
@@ -455,7 +528,6 @@
           </div>
         </div>
 
-        <!-- Project 6 -->
         <div class="project-card reveal-up" data-category="business" style="--delay:0.6s">
           <div class="project-thumbnail">
             <!-- REPLACE WITH SCREENSHOT OF AgriBazzar -->
@@ -476,7 +548,7 @@
           <div class="project-info">
             <span class="project-category business" style="background:rgba(34,197,94,0.12);color:#22c55e;">AgriTech</span>
             <h3 class="project-title">AgriBazzar — AI Agriculture App</h3>
-            <p class="project-desc">Final Year Project: AI chatbot, crop disease recognition, farmer–buyer marketplace built with React, PHP &amp; MySQL.</p>
+            <p class="project-desc">Final Year Project: AI chatbot, crop disease recognition, farmer–buyer marketplace with React, PHP &amp; MySQL.</p>
             <span class="project-link" style="color:var(--text-muted);cursor:default;">
               University FYP <i class="fas fa-university"></i>
             </span>
@@ -492,42 +564,116 @@
     <div class="container">
       <div class="section-header reveal-up">
         <span class="section-tag">Trusted By</span>
-        <h2 class="section-title">Happy <span class="accent">Clients</span></h2>
+        <h2 class="section-title">100+ Happy <span class="accent">Clients</span></h2>
         <div class="title-underline"></div>
         <p class="section-desc">Businesses and institutions that trusted me with their online presence.</p>
       </div>
 
-      <!-- Big counter bar -->
+      <!-- Big counter row -->
       <div class="clients-counter-row reveal-up">
         <div class="clients-counter-item">
           <div class="cc-icon"><i class="fas fa-handshake"></i></div>
-          <span class="cc-number" data-count="7">0</span>
-          <span class="cc-plus">+</span>
+          <div class="cc-numrow">
+            <span class="cc-number" data-count="100">0</span>
+            <span class="cc-plus">+</span>
+          </div>
           <span class="cc-label">Satisfied Clients</span>
         </div>
         <div class="clients-counter-item">
           <div class="cc-icon"><i class="fas fa-globe"></i></div>
-          <span class="cc-number" data-count="6">0</span>
-          <span class="cc-plus">+</span>
+          <div class="cc-numrow">
+            <span class="cc-number" data-count="6">0</span>
+            <span class="cc-plus">+</span>
+          </div>
           <span class="cc-label">Live Websites</span>
         </div>
         <div class="clients-counter-item">
           <div class="cc-icon"><i class="fas fa-star"></i></div>
-          <span class="cc-number" data-count="100">0</span>
-          <span class="cc-plus">%</span>
+          <div class="cc-numrow">
+            <span class="cc-number" data-count="100">0</span>
+            <span class="cc-plus">%</span>
+          </div>
           <span class="cc-label">Satisfaction Rate</span>
         </div>
         <div class="clients-counter-item">
           <div class="cc-icon"><i class="fas fa-users"></i></div>
-          <span class="cc-number" data-count="200">0</span>
-          <span class="cc-plus">+</span>
+          <div class="cc-numrow">
+            <span class="cc-number" data-count="200">0</span>
+            <span class="cc-plus">+</span>
+          </div>
           <span class="cc-label">Students Taught</span>
+        </div>
+      </div>
+
+      <!-- Testimonial marquee -->
+      <div class="testimonial-marquee reveal-up">
+        <div class="tmarquee-track" id="tmarqueeTrack">
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Professional website delivered on time with excellent design."</p>
+            <span>— Progressive IT Tech</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Our patients love how easy the website is to navigate."</p>
+            <span>— Asif &amp; Kamran Fertility IVF</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"A beautiful, fast website representing our college perfectly."</p>
+            <span>— Superior College Phalia</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Clean, responsive, and our customers absolutely love it!"</p>
+            <span>— Brain D Sports</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p>"Our school's online presence is now fully established."</p>
+            <span>— Misali Model High School</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Dedicated, knowledgeable, great support to students and faculty."</p>
+            <span>— Superior University</span>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Professional website delivered on time with excellent design."</p>
+            <span>— Progressive IT Tech</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Our patients love how easy the website is to navigate."</p>
+            <span>— Asif &amp; Kamran Fertility IVF</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"A beautiful, fast website representing our college perfectly."</p>
+            <span>— Superior College Phalia</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Clean, responsive, and our customers absolutely love it!"</p>
+            <span>— Brain D Sports</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            <p>"Our school's online presence is now fully established."</p>
+            <span>— Misali Model High School</span>
+          </div>
+          <div class="tmarquee-card">
+            <div class="tmc-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"Dedicated, knowledgeable, great support to students and faculty."</p>
+            <span>— Superior University</span>
+          </div>
         </div>
       </div>
 
       <!-- Client cards -->
       <div class="clients-grid">
-
         <div class="client-card reveal-up" style="--delay:0.1s">
           <div class="client-icon business-cl"><i class="fas fa-laptop-code"></i></div>
           <div class="client-info">
@@ -535,9 +681,14 @@
             <span class="client-type">Software House</span>
             <p>"Professional website delivered on time with excellent design and performance."</p>
           </div>
-          <div class="client-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <div class="client-bottom">
+            <div class="client-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <a href="https://progressiveittech.com/" target="_blank" rel="noopener" class="client-visit">
+              Visit <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
@@ -548,9 +699,14 @@
             <span class="client-type">Medical Clinic</span>
             <p>"Our patients love the website — easy to navigate and very professional."</p>
           </div>
-          <div class="client-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <div class="client-bottom">
+            <div class="client-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <a href="https://asifakamranfertilityivf.com/" target="_blank" rel="noopener" class="client-visit">
+              Visit <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
@@ -561,9 +717,14 @@
             <span class="client-type">Educational Institution</span>
             <p>"A beautiful, fast website that perfectly represents our institution online."</p>
           </div>
-          <div class="client-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <div class="client-bottom">
+            <div class="client-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <a href="https://superiorphalia.edu.pk/" target="_blank" rel="noopener" class="client-visit">
+              Visit <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
@@ -574,9 +735,14 @@
             <span class="client-type">Sports Business</span>
             <p>"Exactly what we needed — clean, responsive, and our customers love it."</p>
           </div>
-          <div class="client-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <div class="client-bottom">
+            <div class="client-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <a href="https://braindsports.com/" target="_blank" rel="noopener" class="client-visit">
+              Visit <i class="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
 
@@ -587,9 +753,12 @@
             <span class="client-type">School</span>
             <p>"Our school's online presence is now fully established. Great work!"</p>
           </div>
-          <div class="client-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          <div class="client-bottom">
+            <div class="client-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="client-visit" style="opacity:0.4;">Local Project</span>
           </div>
         </div>
 
@@ -600,13 +769,33 @@
             <span class="client-type">University — Lab &amp; Teaching</span>
             <p>"Dedicated, knowledgeable, and a great support to both students and faculty."</p>
           </div>
-          <div class="client-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <div class="client-bottom">
+            <div class="client-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <span class="client-visit" style="opacity:0.4;">Institution</span>
           </div>
         </div>
-
       </div>
+
+      <!-- WhatsApp CTA Banner -->
+      <div class="wa-cta-banner reveal-up">
+        <div class="wa-cta-left">
+          <i class="fab fa-whatsapp wa-cta-icon"></i>
+          <div>
+            <h3>Ready to build your website?</h3>
+            <p>Message me directly on WhatsApp — I reply within minutes!</p>
+          </div>
+        </div>
+        <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20saw%20your%20portfolio%20and%20want%20to%20get%20a%20website%20built.%20Can%20we%20discuss%3F"
+           target="_blank" rel="noopener"
+           class="btn btn-whatsapp btn-wa-large">
+          <i class="fab fa-whatsapp"></i>
+          <span>Start a Conversation</span>
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -621,7 +810,7 @@
 
       <div class="timeline-grid">
 
-        <!-- ── EDUCATION ── -->
+        <!-- Education -->
         <div class="timeline-col">
           <h3 class="timeline-heading reveal-up">
             <i class="fas fa-graduation-cap"></i> Education
@@ -634,8 +823,7 @@
                 <span class="timeline-date">2021 – 2025</span>
                 <h4>BS in Computer Science</h4>
                 <p class="timeline-place"><i class="fas fa-university"></i> Govt College Faisalabad</p>
-                <p>Final Year Project: <strong>AgriBazzar</strong> — AI-enabled Agriculture Web Application
-                with AI chatbot, crop &amp; disease image recognition, and farmer–buyer marketplace.</p>
+                <p>Final Year Project: <strong>AgriBazzar</strong> — AI-enabled Agriculture Web Application with AI chatbot, crop &amp; disease image recognition, and farmer–buyer marketplace.</p>
                 <div class="timeline-tags">
                   <span>React</span><span>PHP</span><span>MySQL</span><span>AI</span><span>Image Recognition</span>
                 </div>
@@ -646,11 +834,11 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <span class="timeline-date">2019 – 2021</span>
-                <h4>Intermediate (FSc / ICS)</h4>
-                <p class="timeline-place"><i class="fas fa-school"></i> Govt College, Sargodha</p>
-                <p>Completed Intermediate education with focus on science and computer subjects, building a strong academic foundation for university-level CS studies.</p>
+                <h4>Intermediate — ICS</h4>
+                <p class="timeline-place"><i class="fas fa-school"></i> Superior Group of Colleges, Mandi Bahauddin</p>
+                <p>Completed Intermediate in ICS (Information &amp; Communication Sciences) with focus on computer science, mathematics, and statistics — laying a strong foundation for university-level CS studies.</p>
                 <div class="timeline-tags">
-                  <span>Mathematics</span><span>Computer Science</span><span>Physics</span>
+                  <span>ICS</span><span>Computer Science</span><span>Mathematics</span><span>Statistics</span>
                 </div>
               </div>
             </div>
@@ -659,11 +847,11 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <span class="timeline-date">Up to 2019</span>
-                <h4>Matriculation (SSC)</h4>
-                <p class="timeline-place"><i class="fas fa-school"></i> Misali Model High School, Sargodha</p>
-                <p>Completed secondary school education with distinction. Developed early interest in computers and technology during school years.</p>
+                <h4>Matriculation (SSC) — Computer Science</h4>
+                <p class="timeline-place"><i class="fas fa-school"></i> Misali Model High School, Mandi Bahauddin</p>
+                <p>Completed secondary school with Computer Science as a major subject. Developed early passion for technology and programming that shaped the career path ahead.</p>
                 <div class="timeline-tags">
-                  <span>Science</span><span>Computer Basics</span><span>Mathematics</span>
+                  <span>Computer Science</span><span>Mathematics</span><span>Science</span>
                 </div>
               </div>
             </div>
@@ -671,7 +859,7 @@
           </div>
         </div>
 
-        <!-- ── EXPERIENCE ── -->
+        <!-- Experience -->
         <div class="timeline-col">
           <h3 class="timeline-heading reveal-up">
             <i class="fas fa-briefcase"></i> Experience
@@ -684,7 +872,7 @@
                 <span class="timeline-date">2025 – Present</span>
                 <h4>Computer Lab Attendant</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Superior University, Mandi Bahauddin</p>
-                <p>Managing computer systems, assisting students during lab sessions, maintaining hardware/software, and supporting faculty during practical classes.</p>
+                <p>Managing computer systems, assisting students during lab sessions, maintaining hardware/software, supporting faculty.</p>
               </div>
             </div>
 
@@ -694,7 +882,7 @@
                 <span class="timeline-date">2025 – Present</span>
                 <h4>Lecturer — ICT</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Superior University, Mandi Bahauddin</p>
-                <p>Delivering undergraduate ICT courses covering computing, networks, and digital systems. Conducting lab sessions and guiding students in academic projects.</p>
+                <p>Delivering undergraduate ICT courses, conducting lab sessions, and guiding students in academic projects.</p>
               </div>
             </div>
 
@@ -704,7 +892,7 @@
                 <span class="timeline-date">2024 – Present</span>
                 <h4>Web Developer (WordPress)</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Progressive IT Tech Software House</p>
-                <p>WordPress development, theme customization, content management, and website performance optimization. Delivered multiple live client projects.</p>
+                <p>WordPress development, theme customization, client project management, and site performance optimization.</p>
                 <div class="timeline-tags">
                   <span>WordPress</span><span>PHP</span><span>CSS</span><span>Client Work</span>
                 </div>
@@ -717,7 +905,7 @@
                 <span class="timeline-date">2021 – 2022</span>
                 <h4>Freelancing &amp; Course Organizer</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Superior College, Mandi Bahauddin</p>
-                <p>Organized freelancing training sessions, coordinated course schedules and instructors, guided students in building digital skills.</p>
+                <p>Organized freelancing training sessions, coordinated course schedules, guided students in digital skills.</p>
               </div>
             </div>
 
@@ -727,7 +915,7 @@
                 <span class="timeline-date">2019 – 2022</span>
                 <h4>CS / ICT Teacher</h4>
                 <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> Misali Model High School</p>
-                <p>Taught Computer Science and ICT to students from classes 5 to 10, covering both theoretical concepts and practical computer skills.</p>
+                <p>Taught Computer Science and ICT to classes 5–10, covering both theoretical and practical computer skills.</p>
               </div>
             </div>
 
@@ -735,7 +923,7 @@
         </div>
       </div>
 
-      <!-- Certifications / Activities -->
+      <!-- Activities -->
       <div class="activities-row reveal-up">
         <h3 class="timeline-heading" style="margin-bottom:1.5rem;">
           <i class="fas fa-certificate"></i> Academic &amp; Professional Activities
@@ -746,7 +934,7 @@
             <div>
               <h5>Research Conference</h5>
               <span>Superior University — May 2025</span>
-              <p>Attended research conference; gained exposure to emerging tech trends, research methodologies, and academic networking.</p>
+              <p>Gained exposure to emerging tech trends, research methodologies, and academic networking.</p>
             </div>
           </div>
           <div class="activity-card">
@@ -754,7 +942,7 @@
             <div>
               <h5>AI-Powered Development</h5>
               <span>Cursor AI — 2024–2025</span>
-              <p>Leveraged AI development tools to accelerate project delivery, generate code, and implement advanced features faster.</p>
+              <p>Leveraged AI tools to accelerate project delivery and implement advanced features faster.</p>
             </div>
           </div>
           <div class="activity-card">
@@ -762,7 +950,7 @@
             <div>
               <h5>Online Business (Self-Employed)</h5>
               <span>2 Years Experience</span>
-              <p>Managed online clothing sales, customer handling, order processing, product promotion, and basic digital marketing.</p>
+              <p>Managed online clothing sales, customer handling, order processing, and digital marketing.</p>
             </div>
           </div>
         </div>
@@ -783,7 +971,7 @@
       <div class="contact-grid">
         <div class="contact-info reveal-left">
           <h3>Let's talk about your project</h3>
-          <p>I'm available for freelance work and full-time opportunities. Reach out through any channel below.</p>
+          <p>I'm available for freelance work and full-time opportunities. Reach out through any channel below — fastest reply on WhatsApp!</p>
           <div class="contact-items">
             <div class="contact-item">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
@@ -799,11 +987,15 @@
                 <a href="tel:+923411557748">+92341-1557748</a>
               </div>
             </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-item wa-contact-item">
+              <div class="contact-icon wa-contact-icon"><i class="fab fa-whatsapp"></i></div>
               <div class="contact-detail">
-                <span>WhatsApp</span>
-                <a href="https://wa.me/923411557748" target="_blank" rel="noopener">+92341-1557748</a>
+                <span>WhatsApp — Fastest Reply</span>
+                <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!%20I%20visited%20your%20portfolio%20and%20want%20to%20discuss%20a%20project."
+                   target="_blank" rel="noopener"
+                   class="wa-link">
+                  +92341-1557748 &nbsp;<i class="fab fa-whatsapp"></i>
+                </a>
               </div>
             </div>
             <div class="contact-item">
@@ -849,6 +1041,16 @@
               <span>Send Message</span>
               <i class="fas fa-paper-plane"></i>
             </button>
+            <!-- Quick WhatsApp alternative -->
+            <div class="form-wa-alt">
+              <span>Or message directly:</span>
+              <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!"
+                 target="_blank" rel="noopener"
+                 class="btn btn-whatsapp btn-full" style="margin-top:0.5rem;">
+                <i class="fab fa-whatsapp"></i>
+                <span>Send via WhatsApp</span>
+              </a>
+            </div>
             <div class="form-success" id="formSuccess">
               <i class="fas fa-check-circle"></i>
               <span>Message sent! I'll get back to you soon.</span>
@@ -879,9 +1081,9 @@
         <div class="footer-social">
           <a href="https://linkedin.com/in/sheikh-haider0789" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           <a href="https://github.com/shabbas0789"            target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://wa.me/923411557748"                target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"                                         target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="mailto:shabbas0789@gmail.com"                              aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/923411557748?text=Hi%20Sheikh%20Haider!" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"                                          target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:shabbas0789@gmail.com"                             aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
         <p class="footer-copy">© 2026 Sheikh Haider Abbas. All rights reserved.</p>
       </div>
